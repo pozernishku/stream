@@ -1,5 +1,6 @@
 ffmpeg \
 -re -stream_loop -1 \
+-nostdin \
 -i video.mp4 \
 -c:v libx264 \
 -c:a aac \
