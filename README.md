@@ -1,6 +1,21 @@
 # stream
 
-stream to Youtube
+stream to Youtube and Twitch
+
+Settings
+https://stream.twitch.tv/encoding/
+
+ffmpeg settings
+https://trac.ffmpeg.org/wiki/EncodingForStreamingSites
+https://trac.ffmpeg.org/wiki/Capture/Webcam
+https://trac.ffmpeg.org/wiki/StreamingGuide
+https://trac.ffmpeg.org/wiki/Encode/YouTube
+https://trac.ffmpeg.org/wiki/Encode/H.264
+https://trac.ffmpeg.org/wiki/Capture/Desktop
+
+https://slhck.info/video/2017/03/01/rate-control.html
+https://slhck.info/video/2017/02/24/crf-guide.html
+https://brokenpipe.wordpress.com/2016/10/07/ffmpeg-h-264-constant-bitrate-cbr-encoding-for-iptv/
 
 # quiet
 https://superuser.com/questions/326629/how-can-i-make-ffmpeg-be-quieter-less-verbose
