@@ -14,7 +14,10 @@ ffmpeg \
 -maxrate 3000k \
 -bufsize 3000k \
 -g 60 \
--f flv "rtmp://live.twitch.tv/app/${TW_API_CAMERA}"
+-f flv \
+-attempt_recovery 1 \
+-recovery_wait_time 1 \
+"rtmp://live.twitch.tv/app/${TW_API_CAMERA}"
 
 : <<'END'
 ffmpeg \
