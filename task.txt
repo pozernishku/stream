@@ -1,0 +1,19 @@
+дорогой микрофон не хочет записывать
+дешевый работает 
+
+определить оборудование
+arecord -L
+arecord -l
+
+aplay -L
+aplay -l
+
+запись с микрофона (индексы оборудования)
+ffmpeg -hide_banner -f alsa -channels 1 -i hw:1,0 -t 10 out6.mp3
+
+запись с микрофона (явное название оборудования)
+ffmpeg -hide_banner -f alsa -channels 1 -i hw:CARD=Device,DEV=0 -t 10 out6_explicit.mp3
+
+воспроизведение (индекс и явно соответственно)
+ffmpeg -hide_banner -i out6_explicit.mp3 -f alsa hw:0,0
+ffmpeg -hide_banner -i out6_explicit.mp3 -f alsa hw:CARD=Headphones,DEV=0
